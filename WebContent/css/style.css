@@ -1,0 +1,185 @@
+@CHARSET "ISO-8859-1";
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	
+}
+
+body{
+	min-height: 100vh;
+	font-family: 'Patrick Hand', cursive !important;
+	
+}
+
+#searchby{
+	width:38%;
+}
+#head{
+	
+    background-color: rgba(160,211,248,0.8);
+
+}
+
+#carddemo{
+	background-color: grey;
+	background-image: linear-gradient(0deg, white, transparent) ;
+}
+.sidebarfixedhref ul{
+	margin-right: -20px;
+}
+.sidebarfixedhref ul li{
+	background-color: rgb(94,163,237);
+	padding:5px;
+	margin-top:2px;
+}
+.sidebarfixedhref ul li:hover{
+	background-color: rgb(165 191 218);;
+
+}
+
+#collectivebar{
+	display:flex;
+}
+.form-control{
+	font-size: 1.5rem;
+}
+
+#sidebarfixed{
+	padding:20px;
+	min-height: 100vh;
+	background-color: rgb(94,163,237);
+	background-image:linear-gradient(45deg, white, transparent);
+	box-sizing: border-box;
+	flex:1;
+	overflow:hidden;
+}
+.sidebarhref ul li{
+	padding:5px;
+	margin-top:2px;
+	background-color: rgb(94,163,237);
+
+}
+.sidebarhref ul li:hover{
+	background-color: rgb(165 191 218);
+
+}
+#mainbar{
+	box-sizing: border-box;
+	flex:3;
+	height: 100vh;
+}
+#usernameicon{
+	border: 2px solid rgb(41 105 174); 
+	background-image: linear-gradient(15deg, #007bff8c, transparent);
+	border-top-right-radius: 10px; 
+	border-top-left-radius: 10px; 
+	overflow: hidden;
+	background-color: rgba(160,211,248,0.8);
+}
+#toggleicon{
+	display:none;
+}
+#closeicon{
+	display: none;
+}
+
+
+#logoutdiv{
+		position: absolute; 
+		border:2px solid black; 
+		right:0%; 
+		margin-right:6px;
+		z-index:1;
+		display: block;
+    	background-color: rgb(160,211,248);
+    	margin-top: 3px;
+    	padding: 10px;
+		height:7%; 
+		width:20%;  
+		border-color:rgb(41 105 174);
+		border-top-left-radius: 200px;
+    	border-bottom-left-radius: 200px;
+    	border-bottom-right-radius: 200px;
+		display: none;
+	}
+#logoutdemo{
+	border-left: 2px outset rgb(41 105 174);
+
+}
+
+
+@media screen and (max-width:780px)/* for phones*/
+{	
+	html{
+		font-size: unset;
+	}
+	#logindiv{
+		width:80%;
+	}
+	
+	table{
+		width: 100%;
+	}
+	td{
+		padding-bottom: 10px;
+	}
+	
+	#mainbar{
+		width: 100%;
+		border: 1px solid black;
+		overflow: scroll;
+	}
+	#sidebar{
+		display: none;
+		position:absolute;
+		z-index:999;
+		min-height: 97vh;
+		background-color: rgba(94,163,237,0.8);
+		background-image:linear-gradient(45deg, white, transparent);
+		width: 70%;
+	}
+	#sidebarfixed{
+		display: none;
+	}
+	#closeicon{
+		position:absolute;
+		right:0%;
+		display: block;
+	}
+	#toggleicon{
+		display: block;
+	}
+	#logoutdiv{
+		right:6%; 
+		margin-right:-3px;
+		height:5%; 
+		width:30%; 
+	}
+	#tab{
+		font-size:100%;
+	}
+}
+@media screen and (min-width:780px)/* for laptop*/
+{
+	
+	#sidebar{
+		display: none;
+	}
+	#sidebarfixed{
+		display: block;
+	}
+	#logoutdiv{
+		right:0%; 
+		margin-right:6px;
+		 height:7%; 
+		 width:20%;  
+	}
+}
+footer{
+	
+	margin:0;
+}
+header{
+	/*position:sticky! important;*/
+}
